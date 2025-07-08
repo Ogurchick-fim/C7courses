@@ -1,0 +1,52 @@
+.world {
+  position: relative;
+  width: 400px; // or adjust as needed
+  height: 400px;
+  overflow: hidden;
+  cursor: grab;
+  z-index: 1; // keep it above background, below overlays
+}
+
+.world-bg {
+  display: none; // hide background
+}
+
+.world-globe {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+}
+
+.world-globe-pole {
+  width: 400px;
+  height: 400px;
+  left: -200px;
+  top: -200px;
+  border-radius: 50%;
+  background-color: transparent; // remove white background
+  opacity: 0.1;
+}
+
+.world-globe-halo {
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  pointer-events: none;
+  opacity: 0.1;
+}
+
+.world-globe-doms-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+}
