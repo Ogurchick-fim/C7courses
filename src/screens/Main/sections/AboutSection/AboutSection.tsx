@@ -120,16 +120,16 @@ export const AboutSection = (): JSX.Element => {
               </CardContent>
               
             </Card>
-            <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-[461px] h-[122px] bg-[#ff76d6] rounded-[44.38px] flex items-center justify-between px-12 mb-[-150px]">
-                  <div className="font-bold text-[98.8px] tracking-[-2.96px] leading-[103.6px] [font-family:'Sansation',Helvetica] text-white">
-                    5+
-                  </div>
-                  <div className="font-normal text-[31.8px] tracking-[-0.95px] leading-[33.4px] [font-family:'Sansation',Helvetica] text-white">
-                    Лет
-                    <br />
-                    превосходства
-                  </div>
-                </div>
+            <div className="absolute -bottom-3 md:-bottom-3 left-1/2 transform -translate-x-1/2 w-[280px] h-[80px] md:w-[461px] md:h-[122px] bg-[#ff76d6] rounded-[30px] md:rounded-[44.38px] flex items-center justify-between px-4 md:px-12 mb-[-60px] md:mb-[-150px] ">
+  <div className="font-bold text-6xl md:text-[98.8px] md:tracking-[-2.96px] md:leading-[103.6px] [font-family:'Sansation',Helvetica] text-white ">
+    5+
+  </div>
+  <div className="font-normal text-lg md:text-[31.8px] md:tracking-[-0.95px] md:leading-[33.4px] [font-family:'Sansation',Helvetica] text-white text-center">
+    Лет
+    <br />
+    превосходства
+  </div>
+</div>
           </div>
         </div>
       </div>
