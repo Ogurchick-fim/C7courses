@@ -109,17 +109,20 @@ export const PartnerSection = (): JSX.Element => {
         лучшие инструменты
       </p>
 
-      <div className="flex justify-center items-center gap-8 mt-[60px] flex-wrap"
-      >
-        {partners.map((partner) => (
-          <div
-            key={partner.id}
-            className=" flex items-center justify-center w-[180px] h-[180px] bg-white rounded-full overflow-hidden"
-          >
-            <img src={partner.logo} alt={partner.name} />
-          </div>
-        ))}
-      </div>
+      <div className="flex justify-start md:justify-center items-center gap-4 md:gap-8 mt-8 md:mt-[60px] overflow-x-auto pb-4 px-4 flex-nowrap md:flex-wrap">
+  {partners.map((partner) => (
+    <div
+      key={partner.id}
+      className="flex-shrink-0 flex items-center justify-center w-20 h-20 md:w-[180px] md:h-[180px] bg-white rounded-full overflow-hidden"
+    >
+      <img 
+        src={partner.logo} 
+        alt={partner.name} 
+        className="w-12 h-12 md:w-auto md:h-auto object-contain"
+      />
+    </div>
+  ))}
+</div>
       </div>
       
     </section>
