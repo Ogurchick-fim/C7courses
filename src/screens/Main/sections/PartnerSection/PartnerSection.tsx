@@ -113,12 +113,12 @@ export const PartnerSection = (): JSX.Element => {
   {partners.map((partner) => (
     <div
       key={partner.id}
-      className="flex-shrink-0 flex items-center justify-center w-20 h-20 md:w-[180px] md:h-[180px] bg-white rounded-full overflow-hidden"
+      className="relative flex-shrink-0 flex items-center justify-center w-20 h-20 md:w-[180px] md:h-[180px] rounded-full overflow-hidden"
     >
       <img 
         src={partner.logo} 
         alt={partner.name} 
-        className="w-12 h-12 md:w-auto md:h-auto object-contain"
+        className="max-w-[90%] max-h-[90%] object-contain"
       />
     </div>
   ))}
